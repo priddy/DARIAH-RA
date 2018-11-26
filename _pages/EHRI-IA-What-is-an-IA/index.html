@@ -1,0 +1,498 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.13.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>DARIAH Reference Architecture</title>
+<meta name="description" content="Architecting the Humanities">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="DARIAH Reference Architecture">
+<meta property="og:title" content="DARIAH Reference Architecture">
+<meta property="og:url" content="http://localhost:4000/DARIAH-RA/_pages/EHRI-IA-What-is-an-IA/">
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/DARIAH-RA/_pages/EHRI-IA-What-is-an-IA/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Mike Priddy",
+      "url": "http://localhost:4000/DARIAH-RA",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/DARIAH-RA/feed.xml" type="application/atom+xml" rel="alternate" title="DARIAH Reference Architecture Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/DARIAH-RA/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/DARIAH-RA/"><!-- dariah logo top left<img src="/DARIAH-RA//assets/images/dariah-eu-purple-small.png">-->DARIAH Reference Architecture</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/DARIAH-RA/" >Introduction</a>
+            </li><li class="masthead__menu-item">
+              <a href="/DARIAH-RA/glossary/" >Glossary</a>
+            </li><li class="masthead__menu-item">
+              <a href="/DARIAH-RA/in-kind/" >In-kind contribution</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="http://localhost:4000/DARIAH-RA/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">|</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="/DARIAH-RA/_pages" itemprop="item"><span itemprop="name">_pages</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">|</span>
+      
+    
+      
+      
+        <li class="current"></li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+	<!-- this is a hack to get logo in correct place -->
+	<div style="max-width: 200px;">
+	<img src="/DARIAH-RA//assets/images/dariah-eu-purple-small.png" style="opacity: 1;">
+	</div>
+	<!-- end of hack -->
+  
+  
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          
+          
+
+          <a href="/DARIAH-RA/"><span class="nav__sub-title">Introduction</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/DARIAH-RA/glossary/"><span class="nav__sub-title">Glossary</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/DARIAH-RA/in-kind/"><span class="nav__sub-title">What is an in-kind contribution?</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/DARIAH-RA/service/"><span class="nav__sub-title">DARIAH Service Provision</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/DARIAH-RA/ikc-services/"><span class="nav__sub-title">In-kind Services</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/DARIAH-RA/activity/"><span class="nav__sub-title">DARIAH Activity Provision</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/DARIAH-RA/ikc-activities/"><span class="nav__sub-title">In-kind Activities</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/DARIAH-RA/colophon/"><span class="nav__sub-title">Colophon</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          
+          
+
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>#What is Architecture (for Research Infrastructures)
+This section provides a short introduction to the notions of architecture, including definitions for the relevant architectural concepts and explains how they relate to the EHRI information architecture.</p>
+
+<p>Many will consider all terms like “reference model”, “reference architecture”, “enterprise architecture” or “architecture frameworks” as something architecture-”ish” with diagrams. A good start, but here we need to consider the relationships between these concepts and the EHRI information architecture.</p>
+
+<p>Architecture is an important aspect in the design of systems; from software systems to environments of distributed services and infrastructures, such as EHRI.</p>
+
+<p>Some examples of architecture standardisation are, amongst others:</p>
+
+<ul>
+  <li>Systems and software engineering - Architecture description (<a href="http://www.iso-architecture.org/ieee-1471/index.html" title="Systems and software engineering — Architecture description - home">ISO/IEC/IEEE 42010:2011</a>)</li>
+  <li>Service Orientated Architecture Reference Model (<a href="https://docs.oasis-open.org/soa-rm/v1.0/soa-rm.html" title="Reference Model for Service Oriented Architecture 1.0 - home">OASIS SOA-RM</a>)</li>
+  <li>Service Orientated Architecture Reference Architecture Foundation (<a href="http://docs.oasis-open.org/soa-rm/soa-ra/v1.0/soa-ra.html" title="Reference Architecture Foundation for Service Oriented Architecture Version 1.0 - home">OASIS SOA-RAF</a>)</li>
+  <li>Reference Model for Open Distributed Processing (<a href="https://www.iso.org/standard/55724.html" title="ISO/IEC 10746-3:2009
+Information technology -- Open distributed processing -- Reference model: Architecture">ODP-RM</a>) .</li>
+</ul>
+
+<p>It is discussed from an enterprise perspective in standards such as The Open Group Architecture Framework (<a href="http://www.opengroup.org/public/arch/p1/oview/index.htm#4" title="What is TOGAF?">TOGAF</a>)  or ArchiMate. Academically it is discussed, for example, by <a href="EHRI-IA-Bibliography.md#b-coultier" title="bibliographic reference">Cloutier et al</a>.</p>
+
+<p>For context of the EHRI information architecture in the architectural development landscape the following definitions are important:</p>
+
+<ul>
+  <li><strong>Architecture</strong>: fundamental concepts or properties of a system in its environment embodied in its elements, relationships, and in the principles of its design and evolution.</li>
+  <li><strong>Architecture Framework</strong>: conventions, principles and practices for the description of architectures established within a specific domain of application and/or community of stakeholders.</li>
+  <li><strong>Enterprise Architecture</strong>: an architecture in which the system in question is the whole enterprise, especially the business processes, technologies, and information systems of the enterprise.</li>
+  <li><strong>Reference Architecture</strong>: models the abstract elements in the domain of interest independent of the technologies, protocols, and products that are used to implement a specific solution for the domain.</li>
+  <li><strong>Reference Model</strong>: an abstract framework for understanding significant relationships among the entities of some environment.</li>
+</ul>
+
+<p>The relations between these concepts with respect to each other, are thus:
+<a id="a-ca"></a></p>
+
+<ul>
+  <li>Concrete system architectures are only valid within a specific environment. It contains descriptions of various aspects ranging from high-level principles to low-level technical implementation details of a system within an institution. As such, it is unlikely that any other institution will have the same architecture;</li>
+  <li>An Enterprise Architecture (EA) is an architecture for a specific type of systems, namely an enterprise. As such it typically exceeds a single application and includes, for example, organizational structure, business processes, information systems and infrastructure; 
+<a id="a-ra"></a></li>
+  <li>A reference architecture (RA) is more generic than an architecture (or EA) and could describe a common architecture for a number of different architectures that are similar, e.g. archives (or museums). It would imply standards that are common for both the archival domain and archives, such as the <a href="EHRI-IA-Glossary.md#g-isadg" title="glossary definition for ISAD(G)">ISAD(G)</a> or <a href="EHRI-IA-Glossary.md#g-ead" title="glossary definition for EAD">EAD</a>. A reference architecture is an elaboration of a reference model to present a more complete picture that includes showing what is involved in realising the modelled entities;
+<a id="a-rm"></a></li>
+  <li>A reference model like <a href="EHRI-IA-Glossary.md#g-oais" title="Reference Model for an Open Archival Information Systems">OAIS</a>  or <a href="EHRI-IA-Glossary.md#g-rm-ss" title="Reference Model for Social Science and Humanities Data Infrastructures">RM-SSH</a>  are even more abstract and discusses only the important entities such as roles, information and functions. Such entities should be valid for most types of archives, digital and non-digital, public, research or governmental, etc. A reference model differs from a reference architecture because it describes the important concepts and relationships in the domain focussing on what distinguishes the elements of the domain, whilst staying independent of any particular solution but instead applies to a class of solutions <a href="http://docs.oasis-open.org/soa-rm/soa-ra/v1.0/soa-ra.html" title="Reference Architecture Foundation for Service Oriented Architecture Version 1.0 - home">(SOA-RAF)</a>.</li>
+</ul>
+
+<p><img src="./examples/architecture-abstraction.png" alt="Relation between different architectural artefacts in terms of abstraction" title="Relation between different architectural artefacts in terms of abstraction" /></p>
+
+<p><em>Relation between different architectural artefacts in terms of abstraction</em></p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%20http%3A%2F%2Flocalhost%3A4000%2FDARIAH-RA%2F_pages%2FEHRI-IA-What-is-an-IA%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2FDARIAH-RA%2F_pages%2FEHRI-IA-What-is-an-IA%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A4000%2FDARIAH-RA%2F_pages%2FEHRI-IA-What-is-an-IA%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2FDARIAH-RA%2F_pages%2FEHRI-IA-What-is-an-IA%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+    <div id="results" class="results"></div></div>
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong></strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+<!--    <li><a href="/DARIAH-RA/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>  -->
+  </ul>
+</div>
+
+<div class="page__footer-copyright">
+<img src="/DARIAH-RA//assets/images/EU-flag.png" width="80" alt="EU flag"><br/> Funded by the European Commission via the <br/> Horizon 2020 programme, under Grant Agreement No.: 675570.<br/>Humanities at Scale (HaS), a DARIAH-EU project.	
+</div>
+<p>
+<div class="page__footer-copyright"> 
+	<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons <br/>Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+	<!-- &copy; 2018 Mike Priddy.--> 
+	<p>Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</p></div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/DARIAH-RA/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+
+
+
+<script src="/DARIAH-RA/assets/js/lunr/lunr.min.js"></script>
+<script src="/DARIAH-RA/assets/js/lunr/lunr-store.js"></script>
+<script src="/DARIAH-RA/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+  </body>
+</html>
